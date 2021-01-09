@@ -1,10 +1,13 @@
 import React from "react";
 import './styles.css';
+import Footer from '../Footer';
+
 import { ReactComponent as MainImage} from './main.svg';
 
 
 function Home(){
     return(
+        <>
         <div className= "home-container">
             <div className="home-content">
                 <div className="home-actions">
@@ -23,8 +26,9 @@ function Home(){
                     <MainImage/>
                 </div>
             </div>
-
         </div>
+        <Footer />
+        </>
     )
 
 }
